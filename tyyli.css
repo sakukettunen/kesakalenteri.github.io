@@ -1,6 +1,11 @@
-body { background-color: #ffcc00; }
+body {
+    background-color: #ffcc00;
+}
 
-h1 {color: rgb(31, 24, 24);text-align: center;}
+h1 {
+    color: rgb(31, 24, 24);
+    text-align: center;
+}
 
 footer {
     position: fixed;
