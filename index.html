@@ -14,6 +14,7 @@
     <form>
         <label>Viikkonumero:</label>
         <input type="text" id="viikko" size="2">
+        <img id="kuvakansio"/>
         <input type="button" id="painike" value="Luo matkakohde ja aktiviteetti" onclick="luoKohde()">
     </form>
     
@@ -27,7 +28,8 @@
         if (viikkonro == 21){
             teksti = "Viikon matkakohde on Ranska!<br>Ranskan Rivieran rentoutus<br>Skumppaa aamupalaksi (mimosat lasketaan.)<br>Käytä koko viikko pelkkiä vaaleita pellavavaatteita.<br>Harjoittele lausumaan 'champagne' halveksuttavasti.<br>Selfie purjeveneessä - tai saunalautalla, jos budjetti sakkaa.";
         }else if (viikkonro == 22){
-            teksti = "Viikon matkakohde on Tokio!<br>Tokio tyylillä<br>Syö sushia lounaaksi, vaikka olisi Saarioisten laatikosta tehty.<br>Kävele ympäriinsä kuin olisit miljardööri eksyksissä.<br>Julista kavereille, että robottikoiran.";
+            teksti = "Viikon matkakohde on Tokio!<br>Tokio tyylillä<br>Syö sushia lounaaksi, vaikka olisi Saarioisten laatikosta tehty.<br>Kävele ympäriinsä kuin olisit miljardööri eksyksissä.<br>Julista kavereille, että robottikoiran."
+            document.getElementById("kuvakansio").src = "/kuvakansio/JAPAN.JPG";
         }else if (viikkonro == 23){
             teksti = "Viikon matkakohde on Rooma!<br>Rooma ilman rajoja<br>Pastaa, viiniä ja ylimielinen katse koko viikko.<br>'Unohdan' maksaa laskun ja heitän: 'Lähetä vaan lasku mun assistentille'.<br>Julista itsesi 'estetiikan mestariksi' - pukeudu kuin Ferrarilla ajava renesanssitaiteilija.";
         }else if (viikkonro == 24){
