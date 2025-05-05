@@ -1,15 +1,9 @@
 body {
     background-color: #ffcc00;
-}
-
-h1 {
-    color: rgb(31, 24, 24);
-    text-align: center;
-}
-
-p {
-    color: rgb(31, 24, 24);
-    font-size: medium;
+    background-image: ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 footer {
