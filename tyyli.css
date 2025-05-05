@@ -4,14 +4,14 @@ body {
     background-position: center;
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
-    color: #2c3e50;
+    color: #1c1d1e;
 }
 
 footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    color: #2c3e50;
+    color: #1c1d1e;
     text-align: center;
     font-size: 14px;
 }
