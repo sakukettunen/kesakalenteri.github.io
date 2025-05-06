@@ -18,15 +18,34 @@
         <input type="button" id="painike" value="Luo matkakohde ja aktiviteetti" onclick="luoKohde()">
     </form>
     
-    <p id="vastaus"></p>
+    <p id="output"></p>
 
     <script>
         function luoKohde(){
-        let viikkonro = document.getElementById("viikko").value;            
+        let viikkonro = document.getElementById("viikko").value;
+        const output = document.getElementById("output").value;            
         let teksti = "";
+
+        const kuvat = {
+            21: "FRANCE.jpg",
+            22: "JAPAN.jpg",
+            23: "",
+            24: "",
+            25: "DUBAI.jpg",
+            26: "LONDON_2846px_Eye_by_Day.jpg"
+        };
 
         if (viikkonro == 21){
             teksti = "Viikon matkakohde on Ranska!<br>Ranskan Rivieran rentoutus<br>Skumppaa aamupalaksi (mimosat lasketaan.)<br>Käytä koko viikko pelkkiä vaaleita pellavavaatteita.<br>Harjoittele lausumaan 'champagne' halveksuttavasti.<br>Selfie purjeveneessä - tai saunalautalla, jos budjetti sakkaa.";
+            const img = document.createElement("img");
+            img.alt = input;
+            img.style.width = "300px";
+
+            const caption = document.createElement("p");
+            caption.textContent = "Viikon matkakohde on Ranska!<br>Ranskan Rivieran rentoutus<br>Skumppaa aamupalaksi (mimosat lasketaan.)<br>Käytä koko viikko pelkkiä vaaleita pellavavaatteita.<br>Harjoittele lausumaan 'champagne' halveksuttavasti.<br>Selfie purjeveneessä - tai saunalautalla, jos budjetti sakkaa.";
+
+            output.appendChild(img);
+            output.appendChild(caption);
         }else if (viikkonro == 22){
             teksti = "Viikon matkakohde on Tokio!<br>Tokio tyylillä<br>Syö sushia lounaaksi, vaikka olisi Saarioisten laatikosta tehty.<br>Kävele ympäriinsä kuin olisit miljardööri eksyksissä.<br>Julista kavereille, että robottikoiran.<br>";
         }else if (viikkonro == 23){
