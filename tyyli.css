@@ -5,11 +5,6 @@ body {
     background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
     color: #1c1d1e;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0; 
 }
 
 footer {
