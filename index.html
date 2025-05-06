@@ -37,21 +37,22 @@
 
         if (kuvat[viikkonro]) {
             const img = document.createElement("img");
-        img.src = "./images/" + kuvat[viikkonro];
+        img.src = "./kuvakansio/" + kuvat[viikkonro];
         img.alt = "Matkakohde";
         img.style.width = "300px";
-        }
+        
 
         const caption = document.createElement("p");
 
-        if (viikkonro == 21){
-            
-            const img = document.createElement("img");
-            img.alt = input;
-            img.style.width = "300px";
-
-            const caption = document.createElement("p");
-            caption.textContent = "Viikon matkakohde on Ranska!<br>Ranskan Rivieran rentoutus<br>Skumppaa aamupalaksi (mimosat lasketaan.)<br>Käytä koko viikko pelkkiä vaaleita pellavavaatteita.<br>Harjoittele lausumaan 'champagne' halveksuttavasti.<br>Selfie purjeveneessä - tai saunalautalla, jos budjetti sakkaa.";
+        if (viikkonro == 21) {
+            caption.innerHTML = 
+              "Viikon matkakohde on <strong>Ranska</strong>!<br>" +
+              "Ranskan Rivieran rentoutus<br>" +
+              "Skumppaa aamupalaksi (mimosat lasketaan.)<br>" +
+              "Käytä koko viikko pelkkiä vaaleita pellavavaatteita.<br>" +
+              "Harjoittele lausumaan 'champagne' halveksuttavasti.<br>" +
+              "Selfie purjeveneessä - tai saunalautalla, jos budjetti sakkaa.";
+        }
 
             output.appendChild(img);
             output.appendChild(caption);
