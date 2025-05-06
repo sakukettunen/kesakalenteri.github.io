@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="tyyli.css">
 </head>
 <body>
+    <div class="container">
     <h1>Kesäkalenteri</h1>
 
     <p>Syötä kenttään viikkonumero, niin saat kyseiselle viikolle matkakohteen ja kohteeseen aktiviteetin.</p>
@@ -19,7 +20,7 @@
     </div>
 
     <!-- Show Button -->
-    <button id="showButton" onclick="showBox()">Näytä Tiedot</button>
+    <button id="showButton" onclick="showBox()">Näytä ohjeet</button>
 
     <!-- Form to input week number -->
     <form>
@@ -44,6 +45,7 @@
             box.style.display = 'block';  // Show the info box
             document.getElementById('showButton').style.display = 'none';  // Hide the show button
         }
+
         
         function luoKohde(){
         let viikkonro = parseInt(document.getElementById("viikko").value);
