@@ -38,7 +38,7 @@
             const img = document.createElement("img");
         img.src = "./kuvakansio/" + kuvat[viikkonro];
         img.alt = "Matkakohde";
-        img.style.width = "300px";
+        img.style.width = "500px";
         
 
         const caption = document.createElement("p");
@@ -55,10 +55,40 @@
 
             output.appendChild(img);
             output.appendChild(caption);
-        }else if (viikkonro == 22){
-            teksti = "Viikon matkakohde on Tokio!<br>Tokio tyylillä<br>Syö sushia lounaaksi, vaikka olisi Saarioisten laatikosta tehty.<br>Kävele ympäriinsä kuin olisit miljardööri eksyksissä.<br>Julista kavereille, että robottikoiran.<br>";
-        }else if (viikkonro == 23){
-            teksti = "Viikon matkakohde on Rooma!<br>Rooma ilman rajoja<br>Pastaa, viiniä ja ylimielinen katse koko viikko.<br>'Unohdan' maksaa laskun ja heitän: 'Lähetä vaan lasku mun assistentille'.<br>Julista itsesi 'estetiikan mestariksi' - pukeudu kuin Ferrarilla ajava renesanssitaiteilija.";
+        } else if (viikkonro === 22) {
+            const img = document.createElement("img");
+            img.src = "./kuvakansio/" + kuvat[22];
+            img.alt = "Matkakohde";
+            img.style.width = "300px";
+
+            const caption = document.createElement("p");
+            caption.innerHTML =
+                "Viikon matkakohde on <strong>Tokio</strong>!<br>" +
+                "Tokio tyylillä<br>" +
+                "Syö sushia lounaaksi, vaikka olisi Saarioisten laatikosta tehty.<br>" +
+                "Kävele ympäriinsä kuin olisit miljardööri eksyksissä.<br>" +
+                "Julista kavereille, että robottikoiran.";
+
+            output.appendChild(img);
+            output.appendChild(caption);
+
+        } else if (viikkonro === 23) {
+            const img = document.createElement("img");
+            img.src = "./kuvakansio/" + kuvat[23];
+            img.alt = "Matkakohde";
+            img.style.width = "300px";
+
+            const caption = document.createElement("p");
+            caption.innerHTML =
+                "Viikon matkakohde on <strong>Rooma</strong>!<br>" +
+                "Rooma ilman rajoja<br>" +
+                "Pastaa, viiniä ja ylimielinen katse koko viikko.<br>" +
+                "'Unohdan' maksaa laskun ja heitän: 'Lähetä vaan lasku mun assistentille'.<br>" +
+                "Julista itsesi 'estetiikan mestariksi' - pukeudu kuin Ferrarilla ajava renessanssitaiteilija.";
+
+            output.appendChild(img);
+            output.appendChild(caption);
+
         }else if (viikkonro == 24){
             teksti = "Viikon matkakohde on Meksiko!<br>Meksikon mojitoviikko<br>Tekoauringonotto ja tekohymy<br>Tequila-tasting (joka päättyy jossain vaiheessa unohtuneeseen somepäivitykseen).<br>'Ostin lomakodin Tulumiin' - kerro tämä kaikille, mutta älä oikeasti osta.";
         }else if (viikkonro == 25){
