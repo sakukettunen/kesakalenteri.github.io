@@ -36,25 +36,31 @@
 
         if (kuvat[viikkonro]) {
             const img = document.createElement("img");
-        img.src = "./kuvakansio/" + kuvat[viikkonro];
-        img.alt = "Matkakohde";
-        img.style.width = "500px";
+            img.src = "./kuvakansio/" + kuvat[viikkonro];
+            img.alt = "Matkakohde";
+            img.style.width = "500px";
         
 
         const caption = document.createElement("p");
 
         if (viikkonro === 21) {
-            caption.innerHTML = 
-              "Viikon matkakohde on <strong>Ranska</strong>!<br>" +
-              "Ranskan Rivieran rentoutus<br>" +
-              "Skumppaa aamupalaksi (mimosat lasketaan.)<br>" +
-              "Käytä koko viikko pelkkiä vaaleita pellavavaatteita.<br>" +
-              "Harjoittele lausumaan 'champagne' halveksuttavasti.<br>" +
-              "Selfie purjeveneessä - tai saunalautalla, jos budjetti sakkaa.";
-        }
+            const img = document.createElement("img");
+            img.src = "./kuvakansio/" + kuvat[21];
+            img.alt = "Matkakohde";
+            img.style.width = "300px";
+
+            const caption = document.createElement("p");
+            caption.innerHTML =
+                "Viikon matkakohde on <strong>Ranska</strong>!<br>" +
+                "Ranskan Rivieran rentoutus<br>" +
+                "Skumppaa aamupalaksi (mimosat lasketaan.)<br>" +
+                "Käytä koko viikko pelkkiä vaaleita pellavavaatteita.<br>" +
+                "Harjoittele lausumaan 'champagne' halveksuttavasti.<br>" +
+                "Selfie purjeveneessä - tai saunalautalla, jos budjetti sakkaa.";
 
             output.appendChild(img);
             output.appendChild(caption);
+
         } else if (viikkonro === 22) {
             const img = document.createElement("img");
             img.src = "./kuvakansio/" + kuvat[22];
@@ -84,7 +90,7 @@
                 "Rooma ilman rajoja<br>" +
                 "Pastaa, viiniä ja ylimielinen katse koko viikko.<br>" +
                 "'Unohdan' maksaa laskun ja heitän: 'Lähetä vaan lasku mun assistentille'.<br>" +
-                "Julista itsesi 'estetiikan mestariksi' - pukeudu kuin Ferrarilla ajava renessanssitaiteilija.";
+                "Julista itsesi 'estetiikan mestariksi' – pukeudu kuin Ferrarilla ajava renessanssitaiteilija.";
 
             output.appendChild(img);
             output.appendChild(caption);
@@ -116,6 +122,7 @@
         document.getElementById("vastaus").innerHTML = teksti;
 
         }
+    }
     </script>
 </body>
 </html>
