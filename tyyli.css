@@ -7,6 +7,75 @@ body {
     color: #1c1d1e;
 }
 
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px; 
+    text-align: center; 
+    color: #ff2600db; 
+    text-transform: uppercase; /* Makes it all caps */
+    letter-spacing: 3px; /* Adds space between letters for a cleaner look */
+    background: linear-gradient(to right, hwb(61 18% 0%), #a1d3ff); 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8); 
+    padding: 20px; 
+    margin: 20px 0;
+    border-radius: 25px;
+}
+
+.rightbox {
+    width: 160px;
+    height: auto;
+    padding: 8px;
+    background-color: rgba(232, 223, 149, 0.7); /* Subtle transparency */
+    border: 2px solid #0051ffb3; /* Lighter border */
+    position: fixed;
+    right: 20px;
+    top: 20px; /* Still at the top */
+    border-radius: 12px;
+    font-size: 13px;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    max-width: 180px;
+    text-align: center;
+}
+
+.rightbox.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  #showButton {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    background-color: #c3d5fdd2;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 9;
+    display: none;  /* Hidden by default */
+    opacity: 0;  /* Start invisible */
+    transition: opacity 0.5s ease;  /* Smooth fade transition */
+}
+
+#showButton.visible {
+    display: block;  /* Make it display when needed */
+    opacity: 1;  /* Fade in */
+}
+
+p {
+    background:  rgba(255, 250, 250, 0.914); 
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    max-width: 500px;
+    line-height: 1.6;
+    box-shadow: 0px 4px 10px rgba(7, 8, 8, 0.2);
+}
+
+
+
 footer {
     position: fixed;
     bottom: 0;

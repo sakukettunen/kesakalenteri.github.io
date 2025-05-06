@@ -11,6 +11,17 @@
 
     <p>Syötä kenttään viikkonumero, niin saat kyseiselle viikolle matkakohteen ja kohteeseen aktiviteetin.</p>
 
+    <!-- Info Box -->
+    <div class="rightbox" id="infoBox">
+        <button onclick="hideBox()" class="close-btn">×</button>
+        <h4>Kalenterissa toimivat viikkonumerot: <br>
+            21, 22, 23, 24, 25, 26, 27,<br>28, 29, 30, 31, 32, 33.</h4>
+    </div>
+
+    <!-- Show Button -->
+    <button id="showButton" onclick="showBox()">Näytä Tiedot</button>
+
+    <!-- Form to input week number -->
     <form>
         <label>Viikkonumero:</label>
         <input type="text" id="viikko" size="2">
@@ -20,6 +31,20 @@
     <p id="output"></p>
 
     <script>
+        // Function to hide the info box and show the button again
+        function hideBox() {
+            const box = document.getElementById('infoBox');
+            box.style.display = 'none';  // Hide the info box
+            document.getElementById('showButton').style.display = 'block';  // Show the button to reveal the info box again
+        }
+
+        // Function to show the info box and hide the button
+        function showBox() {
+            const box = document.getElementById('infoBox');
+            box.style.display = 'block';  // Show the info box
+            document.getElementById('showButton').style.display = 'none';  // Hide the show button
+        }
+        
         function luoKohde(){
         let viikkonro = parseInt(document.getElementById("viikko").value);
         const output = document.getElementById("output");
