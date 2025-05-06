@@ -23,8 +23,8 @@
     <script>
         function luoKohde(){
         let viikkonro = document.getElementById("viikko").value;
-        const output = document.getElementById("output").value;            
-        let teksti = "";
+        const output = document.getElementById("output").value;
+        output.innerHTML = "";
 
         const kuvat = {
             21: "FRANCE.jpg",
@@ -34,6 +34,15 @@
             25: "DUBAI.jpg",
             26: "LONDON_2846px_Eye_by_Day.jpg"
         };
+
+        if (kuvat[viikkonro]) {
+            const img = document.createElement("img");
+        img.src = "./images/" + kuvat[viikkonro];
+        img.alt = "Matkakohde";
+        img.style.width = "300px";
+        }
+
+        const caption = document.createElement("p");
 
         if (viikkonro == 21){
             
