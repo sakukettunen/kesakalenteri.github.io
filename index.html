@@ -104,7 +104,7 @@
 
         }else if (viikkonro === 24) {
             const img = document.createElement("img");
-            img.src = "./kuvakansio/" + kuvat[23];
+            img.src = "./kuvakansio/" + kuvat[viikkonro];
             img.alt = "Matkakohde";
             img.style.width = "500px";
 
@@ -121,7 +121,7 @@
 
         }else if (viikkonro === 25) {
             const img = document.createElement("img");
-            img.src = "./kuvakansio/" + kuvat[23];
+            img.src = "./kuvakansio/" + kuvat[viikkonro];
             img.alt = "Matkakohde";
             img.style.width = "500px";
 
@@ -269,7 +269,7 @@
             output.appendChild(caption);
             
         }else {
-            teksti = "Kyseinen viikko ei kuulu kesäkalenteriin :("
+            output.innerHTML = "Kyseinen viikko ei kuulu kesäkalenteriin :("
         }
 
         document.getElementById("output").innerHTML = teksti;
