@@ -31,7 +31,14 @@
             23: "",
             24: "",
             25: "DUBAI.jpg",
-            26: "LONDON_2846px_Eye_by_Day.jpg"
+            26: "LONDON_2846px_Eye_by_Day.jpg",
+            27: "BRAZIL_RIO.jpg",
+            28: "SUOMI_Töölönlahti.jpg",
+            29: "ESPANJA.jpg",
+            30: "THAIMAA_3236px.jpg",
+            31: "California,_USA_.jpg",
+            32: "INTIA.jpg",
+            33: "CHERNOBYL.jpg"
         };
 
         if (kuvat[viikkonro]) {
@@ -95,31 +102,177 @@
             output.appendChild(img);
             output.appendChild(caption);
 
-        }else if (viikkonro == 24){
-            teksti = "Viikon matkakohde on Meksiko!<br>Meksikon mojitoviikko<br>Tekoauringonotto ja tekohymy<br>Tequila-tasting (joka päättyy jossain vaiheessa unohtuneeseen somepäivitykseen).<br>'Ostin lomakodin Tulumiin' - kerro tämä kaikille, mutta älä oikeasti osta.";
-        }else if (viikkonro == 25){
-            teksti = "Viikon matkakohde on Dubai!<br>Dubai dreaming<br>Käytä aurinkolaseja sisällä.<br>Tilaa taksi, vaikka olisit 200 metrin päässä kohteesta.<br>Puheluun vastatessa aloita aina: 'Moro, just oltiin neuvottelemassa pienestä sijotuksesta'.";
-        }else if (viikkonro == 26){
-            teksti = "Viikon matkakohde on Lontoo!<br>Lontoo calling<br>Pidä teeseremonia - korvaa tee ginillä.<br>Pue tracksuit ja mene haastamaan lokaalit roadminit.<br>Imitoi brittienglantia niin kauan, että ystävät poistuvat.";
-        }else if (viikkonro == 27){
-            teksti = "Viikon matkakohde on Rio de janeiro!<br>Rikkaana Riossa<br>Aamukävely sandaaleissa ja silkkipaidassa.<br>Brassaile bikinikuvalla, vaikkei sinulla ole uima-allasta.<br>Käy salilla kerran - ja palkitse itsesi viikolla caipirinhoja.";
-        }else if (viikkonro == 28){
-            teksti = "Viikon matkakohde on Suomi!<br>Viikonloppu Suomessa - koska lentokentällä tuli nälkä<br>Vietä yksi ilta mökillä ja sano: 'Luonto on tärkeää, vaikka en omista sitä'.<br>Kirjoita LinkedIn-päivitys siitä, miten Suomi on 'paras paikka palautua'.<br>Käy kalassa. Tarkoittaa istu laiturilla juomassa lonkeroa ja filosofoi rikkautta.";
-        }else if (viikkonro == 29){
-            teksti = "Viikon matkakohde on Espanja!<br>Siesta, fiesta ja sunnuntai-itku<br>Juo sangriaa kuin verottsjs ei olisi olemassa<br>Bingo sille, joka bongaa ekana suomalaisen veropakolaisen.<br>Bonus!: testaa kuinka monta tapasta on liikaa (vastaus: ei ole)";
-        }else if (viikkonro == 30){
-            teksti = "Viikon matkakohde on Thaimaa!<br>Chakrat sekaisin ja SangSom soi<br>Yritä löytää itsesi - löydätkin vain vatsataudin ja buddy drinkit.<br>Testaa paikallinen hieronta - saatat löytää rauhan (tai kiusallisen tarinan).<br>Etsi baarista seuralainen - ylläty aamulla (tai jo yöllä).";
-        }else if (viikkonro == 31){
-            teksti = "Viikon matkakohde on USA!<br>Kalifornia, baby!<br>Teema: Sun, surf, startup - ja ehkä vähän self-helpkiä<br>Tyyli: Aurinkolasit sisällä = pakolliset.<br>Smoothie kädessä = persoonallisuus<br>Pukeudu kuin Tom Cruise ja soita täysillä Danger zone.";
-        }else if (viikkonro == 32){
-            teksti = "Viikon matkakohde on Intia!<br>Henkeä, hikeä ja halpoja henkisiä heräämisiä<br>Teema: Tulin etsimään sisäistä rauhaa - ja ehkä vähän currya<br>Leveät housut, suuret korut ja vielä suuremmat tunnetilat.<br>Puhu syvällisiä, joita et itsekään ihan ymmärrä - 'universumi vaan tietää.'<br>Street food-haaste: monessako kojussa ehdit käydä ennen kuin keho sanoo 'namaste ei'?";
-        }else if (viikkonro == 33){
-            teksti = "Viikon matkakohde on Ukraina!<br>Tšernobylissä - Glow up, mutta radioaktiivinen<br>Teema: Tulin katsomaan menneisyyden haamuja - jäin poseeraamaan ydinjätteelle.<br>Juo vodkaa ja sano, että se tappaa säteilyn (ei tee niin, mutta fiilis ratkaisee) ja jotain muuta jos keksii.";
+        }else if (viikkonro === 24) {
+            const img = document.createElement("img");
+            img.src = "./kuvakansio/" + kuvat[23];
+            img.alt = "Matkakohde";
+            img.style.width = "300px";
+
+            const caption = document.createElement("p");
+            caption.innerHTML =
+                "Viikon matkakohde on Meksiko!<br>" + 
+                "Meksikon mojitoviikko<br>" + 
+                "Tekoauringonotto ja tekohymy<br>" +
+                "Tequila-tasting (joka päättyy jossain vaiheessa unohtuneeseen somepäivitykseen).<br>" + 
+                "'Ostin lomakodin Tulumiin' - kerro tämä kaikille, mutta älä oikeasti osta.";
+
+            output.appendChild(img);
+            output.appendChild(caption);
+
+        } else if (viikkonro === 25) {
+            const img = document.createElement("img");
+            img.src = "./kuvakansio/" + kuvat[23];
+            img.alt = "Matkakohde";
+            img.style.width = "300px";
+
+            const caption = document.createElement("p");
+            caption.innerHTML =
+                "Viikon matkakohde on Dubai!<br>" + 
+                "Dubai dreaming<br>Käytä aurinkolaseja sisällä.<br>" + 
+                "Tilaa taksi, vaikka olisit 200 metrin päässä kohteesta.<br>" + 
+                "Puheluun vastatessa aloita aina: 'Moro, just oltiin neuvottelemassa pienestä sijotuksesta'.";
+
+            output.appendChild(img);
+            output.appendChild(caption);
+            
+        } else if (viikkonro === 26) {
+            const img = document.createElement("img");
+            img.src = "./kuvakansio/" + kuvat[23];
+            img.alt = "Matkakohde";
+            img.style.width = "300px";
+
+            const caption = document.createElement("p");
+            caption.innerHTML =
+                "Viikon matkakohde on Lontoo!<br>" + 
+                "Lontoo calling<br>Pidä teeseremonia - korvaa tee ginillä.<br>" + 
+                "Pue tracksuit ja mene haastamaan lokaalit roadminit.<br>" + 
+                "Imitoi brittienglantia niin kauan, että ystävät poistuvat.";
+
+            output.appendChild(img);
+            output.appendChild(caption);
+            
+        }else if (viikkonro === 27) {
+            const img = document.createElement("img");
+            img.src = "./kuvakansio/" + kuvat[23];
+            img.alt = "Matkakohde";
+            img.style.width = "300px";
+
+            const caption = document.createElement("p");
+            caption.innerHTML =
+                "Viikon matkakohde on Rio de janeiro!<br>Rikkaana Riossa<br>" + 
+                "Aamukävely sandaaleissa ja silkkipaidassa.<br>" + "Brassaile bikinikuvalla, vaikkei sinulla ole uima-allasta.<br>" + 
+                "Käy salilla kerran - ja palkitse itsesi viikolla caipirinhoja.";
+
+            output.appendChild(img);
+            output.appendChild(caption);
+
+        }else if (viikkonro === 28) {
+            const img = document.createElement("img");
+            img.src = "./kuvakansio/" + kuvat[23];
+            img.alt = "Matkakohde";
+            img.style.width = "300px";
+
+            const caption = document.createElement("p");
+            caption.innerHTML =
+                "Viikon matkakohde on Suomi!<br>" + 
+                "Viikonloppu Suomessa - koska lentokentällä tuli nälkä<br>" + 
+                "Vietä yksi ilta mökillä ja sano: 'Luonto on tärkeää, vaikka en omista sitä'.<br>" + 
+                "Kirjoita LinkedIn-päivitys siitä, miten Suomi on 'paras paikka palautua'.<br>" + 
+                "Käy kalassa. Tarkoittaa istu laiturilla juomassa lonkeroa ja filosofoi rikkautta.";
+
+            output.appendChild(img);
+            output.appendChild(caption);
+
+        }else if (viikkonro === 29) {
+            const img = document.createElement("img");
+            img.src = "./kuvakansio/" + kuvat[23];
+            img.alt = "Matkakohde";
+            img.style.width = "300px";
+
+            const caption = document.createElement("p");
+            caption.innerHTML =
+                "Viikon matkakohde on Espanja!<br>" + 
+                "Siesta, fiesta ja sunnuntai-itku<br>" + 
+                "Juo sangriaa kuin verottaja ei olisi olemassa<br>" + 
+                "Bingo sille, joka bongaa ekana suomalaisen veropakolaisen.<br>" + 
+                "Bonus!: testaa kuinka monta tapasta on liikaa (vastaus: ei ole)";
+
+            output.appendChild(img);
+            output.appendChild(caption);
+
+        }else if (viikkonro === 30) {
+            const img = document.createElement("img");
+            img.src = "./kuvakansio/" + kuvat[23];
+            img.alt = "Matkakohde";
+            img.style.width = "300px";
+
+            const caption = document.createElement("p");
+            caption.innerHTML =
+                "Viikon matkakohde on Thaimaa!<br>" + 
+                "Chakrat sekaisin ja SangSom soi<br>" + 
+                "Yritä löytää itsesi - löydätkin vain vatsataudin ja buddy drinkit.<br>" + 
+                "Testaa paikallinen hieronta - saatat löytää rauhan (tai kiusallisen tarinan).<br>" + 
+                "Etsi baarista seuralainen - ylläty aamulla (tai jo yöllä).";
+
+            output.appendChild(img);
+            output.appendChild(caption);
+
+        }else if (viikkonro === 31) {
+            const img = document.createElement("img");
+            img.src = "./kuvakansio/" + kuvat[23];
+            img.alt = "Matkakohde";
+            img.style.width = "300px";
+
+            const caption = document.createElement("p");
+            caption.innerHTML =
+                "Viikon matkakohde on USA!<br>" + 
+                "Kalifornia, baby!<br>Teema: Sun, surf, startup - ja ehkä vähän self-helpkiä<br>" + 
+                "Tyyli: Aurinkolasit sisällä = pakolliset.<br>" +
+                "Smoothie kädessä = persoonallisuus<br>" + 
+                "Pukeudu kuin Tom Cruise ja soita täysillä Danger zone.";
+
+            output.appendChild(img);
+            output.appendChild(caption);
+            
+        }else if (viikkonro === 32) {
+            const img = document.createElement("img");
+            img.src = "./kuvakansio/" + kuvat[23];
+            img.alt = "Matkakohde";
+            img.style.width = "300px";
+
+            const caption = document.createElement("p");
+            caption.innerHTML =
+                "Viikon matkakohde on Intia!<br>" + 
+                "Henkeä, hikeä ja halpoja henkisiä heräämisiä<br>" + 
+                "Teema: Tulin etsimään sisäistä rauhaa - ja ehkä vähän currya<br>" + 
+                "Leveät housut, suuret korut ja vielä suuremmat tunnetilat.<br>" + 
+                "Puhu syvällisiä, joita et itsekään ihan ymmärrä - 'universumi vaan tietää.'<br>" + 
+                "Street food-haaste: monessako kojussa ehdit käydä ennen kuin keho sanoo 'namaste ei'?";
+
+            output.appendChild(img);
+            output.appendChild(caption);
+
+        }else if (viikkonro === 32) {
+            const img = document.createElement("img");
+            img.src = "./kuvakansio/" + kuvat[23];
+            img.alt = "Matkakohde";
+            img.style.width = "300px";
+
+            const caption = document.createElement("p");
+            caption.innerHTML =
+                "Viikon matkakohde on Ukraina!<br>" + 
+                "Tšernobylissä - Glow up, mutta radioaktiivinen<br>" + 
+                "Teema: Tulin katsomaan menneisyyden haamuja - jäin poseeraamaan ydinjätteelle.<br>" + 
+                "Juo vodkaa ja sano, että se tappaa säteilyn (ei tee niin, mutta fiilis ratkaisee) ja jotain muuta jos keksii.";
+
+            output.appendChild(img);
+            output.appendChild(caption);
+            
         }else {
             teksti = "Kyseinen viikko ei kuulu kesäkalenteriin :("
         }
 
-        document.getElementById("vastaus").innerHTML = teksti;
+        document.getElementById("output").innerHTML = teksti;
 
         }
     }
